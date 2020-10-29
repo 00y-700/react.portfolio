@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { Card, Form, } from "react-bootstrap";
+import "./Bio.css";
 
 class Contact extends Component {
   render() {
     return (
-      <Card>
+      <div className="page">
+          <Card>
         <Form>
             <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label>Name</Form.Label>
@@ -20,6 +22,8 @@ class Contact extends Component {
             </Form.Group>
         </Form>
       </Card>
+      </div>
+      
     )
   
 };

@@ -6,7 +6,8 @@ import "./Bio.css";
 class Bio extends Component {
   render() {
     return (
-    <Jumbotron fluid>
+    <div className="page">
+        <Jumbotron fluid>
     <Container>
       <h1>About Me</h1>
       <Row>
@@ -28,6 +29,8 @@ class Bio extends Component {
       </Row>
     </Container>
   </Jumbotron>
+    </div>
+    
  
     );
   }
