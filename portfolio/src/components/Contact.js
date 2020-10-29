@@ -1,13 +1,24 @@
 import React, { Component } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Form, } from "react-bootstrap";
 
 class Contact extends Component {
   render() {
     return (
       <Card>
-        <Card.Body>
-        <a href="https://www.linkedin.com/in/jeffrey-harding-0809261a8/">LinkedIn</a>
-        </Card.Body>
+        <Form>
+            <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="textarea" placeholder="name" />
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="name@example.com" />
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Example textarea</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+            </Form.Group>
+        </Form>
       </Card>
     )
   
