@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Jumbotron, Container, Figure, Row, Col } from "react-bootstrap";
 import bioPic from "../assets/one.jpg";
-import "./Bio.css";
+import "./style.css";
 
 class Bio extends Component {
   render() {
@@ -16,7 +16,7 @@ class Bio extends Component {
             <Figure.Image
               width={171}
               height={180}
-              alt="171x180"
+              alt="profilePic"
               src={bioPic}
             />
           </Figure>
